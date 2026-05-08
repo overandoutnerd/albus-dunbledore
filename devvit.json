@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+
+  "name": "albus-dunbledore",
+
+  "server": {
+    "entry": "index.cjs"
+  },
+
+  "permissions": {
+    "reddit": {
+      "enable": true
+    },
+    "redis": true
+  },
+
+  "triggers": {
+    "onCommentSubmit": "/internal/triggers/comment-submit"
+  },
+
+  "dev": {
+    "subreddit": "HarryPottersOnHBO"
+  },
+
+  "media": {
+    "dir": "assets"
+  },
+
+  "marketingAssets": {
+    "icon": "assets/icon.png"
+  }
+}
