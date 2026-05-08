@@ -69,11 +69,36 @@ triggers.post(
       const body =
         comment.body.toLowerCase();
 
+      const subreddit =
+        payload.subreddit?.name?.toLowerCase() ??
+        "";
+
+      const isHarryPotterOnHBO =
+        subreddit ===
+        "harrypottersonhbo";
+
+      const shouldReply =
+        isHarryPotterOnHBO
+          ? (
+              body.includes(
+                "dumbledore!"
+              ) ||
+              body.includes(
+                "albus!"
+              )
+            )
+          : (
+              body.includes(
+                "dumbledore"
+              ) ||
+              body.includes(
+                "albus"
+              )
+            );
+
       // Only trigger if dumbledore mentioned
       if (
-        !body.includes(
-          "dumbledore"
-        )
+        !shouldReply
       ) {
         return c.json(
           {
