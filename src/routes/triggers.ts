@@ -75,7 +75,9 @@ triggers.post(
 
       const isHarryPotterOnHBO =
         subreddit ===
-        "harrypottersonhbo";
+          "harrypottersonhbo" ||
+        subreddit ===
+          "harrypotteronhbo";
 
       const shouldReply =
         isHarryPotterOnHBO
