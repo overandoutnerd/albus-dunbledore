@@ -1,105 +1,89 @@
-# 🧙 Albus Dumbledore Bot
+# Albus Dumbledore Bot
 
-Bring a little Hogwarts chaos to Reddit.
+A simple Reddit bot built with Devvit that replies with random Dumbledore quotes whenever someone mentions “Albus” or “Dumbledore” in a comment.
 
-Albus Dumbledore Bot is a fun community bot that replies with magical quotes, chaotic wizard wisdom, and legendary Dumbledore energy across Reddit conversations. Whenever someone mentions “Albus” or “Dumbledore” in the comments, the bot may appear with a random quote.
-
-Built for entertainment, community interaction, and pure magical vibes.
+The goal was to make something lightweight, fun, and easy to maintain app.
 
 ---
 
-# ✨ What The Bot Does
+## Features
 
-- 💬 Replies with randomized Dumbledore-style quotes whenever someone mentions “Albus” or “Dumbledore”
-- 🧙 Brings wizard energy into comment sections
-- 😂 Mixes wisdom, chaos, and absurd humor
-- ⚡ Appears automatically during conversations
-- 🎭 Creates fun community interactions
-- 🔮 Occasionally says things that make absolutely no sense
-
----
-
-# 📸 Example Responses
-
-> “Happiness can be found even in the darkest of times, if one remembers to turn on the light.”
-
-> “Nitwit. Blubber. Oddment. Tweak.”
-
-> “Curiosity is a dangerous thing. Slightly less dangerous than a dragon, but still.”
-
-> “I do love knitting patterns.”
+- Replies to comments containing:
+  - `albus`
+  - `dumbledore`
+- Random quote selection
+- Case-insensitive matching
+- Basic self-reply protection
+- Lightweight TypeScript codebase
+- Built using Reddit Devvit
 
 ---
 
-# 🏰 Why People Love It
+## Example
 
-The internet is already full of boring bots.
+**User comment:**
 
-This one feels like an old wizard wandered into Reddit with zero supervision.
+```txt
+Dumbledore would probably say something wise here
+```
 
-The bot is designed to:
+**Bot reply:**
 
-- Make communities feel more alive
-- Add humor to discussions
-- Create memorable interactions
-- Surprise users with unexpected replies
-- Keep the magical atmosphere going
-
-Sometimes wholesome.  
-Sometimes unhinged.  
-Always magical.
+```txt
+“Happiness can be found even in the darkest of times, if one remembers to turn on the light.”
+```
 
 ---
 
-# 🪄 Perfect For
+## Tech Stack
 
-- Harry Potter communities
-- Meme subreddits
-- Roleplay communities
-- Fantasy fandoms
-- Anyone who enjoys wizard nonsense
-
----
-
-# 🔥 Personality
-
-The bot’s personality is inspired by:
-
-- Wise old wizard energy
-- Chaotic humor
-- Random magical nonsense
-- Calm confidence during complete insanity
-- The feeling of receiving life advice from someone who may or may not own twelve phoenixes
+- TypeScript
+- Reddit Devvit
+- Hono
+- Node.js
 
 ---
 
-# 🌟 Community Experience
+## How It Works
 
-Users might:
+The bot listens for new Reddit comments.
 
-- Summon the bot intentionally
-- Turn responses into memes
-- Start wizard roleplay chains
-- Have completely normal conversations interrupted by magical nonsense
+When a comment contains either:
 
-And honestly, that’s the goal.
+- `albus`
+- `dumbledore`
 
----
-
-# ❤️ Made For Fun
-
-This bot exists purely to make Reddit a little more entertaining.
-
-No ads.  
-No crypto nonsense.  
-No weird spam.
-
-Just wizard energy.
+the bot selects a random quote from a predefined quote list and posts it as a reply.
 
 ---
 
-# 🧙 Final Words
+## Safety
 
-> “It does not do to dwell on dreams and forget to live.”
+The bot includes basic protections to avoid:
 
-Now go spread some magical chaos.
+- replying to itself and creating loops
+- replying to same comment more than one
+
+---
+
+## Quotes
+
+Quotes are stored in:
+
+```txt
+src/data/quotes.ts
+```
+
+Example:
+
+```ts
+export const QUOTES = [
+  "Nitwit. Blubber. Oddment. Tweak.",
+  "Happiness can be found even in the darkest of times.",
+];
+```
+---
+
+## License
+
+MIT
