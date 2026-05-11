@@ -2,7 +2,7 @@
 
 Bring a little Hogwarts chaos to Reddit.
 
-Albus Dumbledore Bot is a fun community bot that replies with magical quotes, chaotic wizard wisdom, and legendary Dumbledore energy across Reddit conversations. Whether someone summons wisdom, posts nonsense, or simply exists near enough wizard energy, the bot might appear.
+Albus Dumbledore Bot is a fun community bot that replies with magical quotes, chaotic wizard wisdom, and legendary Dumbledore energy across Reddit conversations. Whenever someone mentions “Albus” or “Dumbledore” in the comments, the bot may appear with a random quote.
 
 Built for entertainment, community interaction, and pure magical vibes.
 
@@ -10,7 +10,7 @@ Built for entertainment, community interaction, and pure magical vibes.
 
 # ✨ What The Bot Does
 
-- 💬 Replies with randomized Dumbledore-style quotes
+- 💬 Replies with randomized Dumbledore-style quotes whenever someone mentions “Albus” or “Dumbledore”
 - 🧙 Brings wizard energy into comment sections
 - 😂 Mixes wisdom, chaos, and absurd humor
 - ⚡ Appears automatically during conversations
@@ -28,8 +28,6 @@ Built for entertainment, community interaction, and pure magical vibes.
 > “Curiosity is a dangerous thing. Slightly less dangerous than a dragon, but still.”
 
 > “I do love knitting patterns.”
-
-> “Ah yes. That reminds me of a goat incident from 1973.”
 
 ---
 
@@ -59,7 +57,6 @@ Always magical.
 - Meme subreddits
 - Roleplay communities
 - Fantasy fandoms
-- Chaotic group chats
 - Anyone who enjoys wizard nonsense
 
 ---
@@ -81,7 +78,6 @@ The bot’s personality is inspired by:
 Users might:
 
 - Summon the bot intentionally
-- Quote the bot in replies
 - Turn responses into memes
 - Start wizard roleplay chains
 - Have completely normal conversations interrupted by magical nonsense
